@@ -3,8 +3,8 @@
 import PackageDescription
 
 let version = "1.0.0"
-let moduleName = "NetworkModule"
-let checksum = "8f42f67a0665798e1c4e149c73a36fb9dddc062bc90e3b4e077ea571613ddda1"
+let moduleName = "KidozSDK"
+let checksum = "977b36d2e1a546a233207e5d2f7c172288237a2d8202c05ba9df12eb6236a1db"
 
 let package = Package(
     name: moduleName,

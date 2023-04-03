@@ -3,8 +3,8 @@
 import PackageDescription
 
 let version = "1.0.5"
-let moduleName = "KidozSDK"
-let checksum = "977b36d2e1a546a233207e5d2f7c172288237a2d8202c05ba9df12eb6236a1db"
+let moduleName = "KidozSDKDist"
+let checksum = ""
 
 let package = Package(
     name: moduleName,
@@ -14,12 +14,15 @@ let package = Package(
     products: [
         .library(
             name: moduleName,
-            targets: [moduleName]
+            targets: [moduleName, "KidozSDK"]
         )
     ],
     targets: [
+	.target(
+		name: moduleName
+	),
         .binaryTarget(
-            name: moduleName,
+            name: "KidozSDK",
             url: "https://github.com/kidoz-il/KidozSdkDistribution/releases/download/\(version)/\(moduleName).xcframework.zip",
             checksum: checksum
         )

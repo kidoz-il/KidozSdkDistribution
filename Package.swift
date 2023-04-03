@@ -14,12 +14,12 @@ let package = Package(
     products: [
         .library(
             name: moduleName,
-            targets: ["KidozRemoteTarget"]
+            targets: [moduleName]
         )
     ],
     targets: [
         .binaryTarget(
-            name: "KidozRemoteTarget",
+            name: moduleName,
             url: "https://github.com/kidoz-il/KidozSdkDistribution/releases/download/\(version)/\(moduleName).xcframework.zip",
             checksum: checksum
         )

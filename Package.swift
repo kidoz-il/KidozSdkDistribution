@@ -2,7 +2,7 @@
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 import PackageDescription
 
-let version = "1.0.5"
+let version = "1.0.6"
 let moduleName = "KidozSDKDist"
 let checksum = ""
 
@@ -23,7 +23,8 @@ let package = Package(
 	),
         .binaryTarget(
             name: "KidozSDK",
-            url: "https://github.com/kidoz-il/KidozSdkDistribution/releases/download/\(version)/\(moduleName).xcframework.zip",
+            //url: "https://github.com/kidoz-il/KidozSdkDistribution/releases/download/\(version)/\(moduleName).xcframework.zip",
+            url: "https://github.com/kidoz-il/KidozSdkDistribution/releases/download/\(version)/KidozSDK.xcframework.zip",
             checksum: checksum
         )
     ]

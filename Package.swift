@@ -2,9 +2,9 @@
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 import PackageDescription
 
-let version = "1.0.3"
+let version = "1.0.4"
 let moduleName = "KidozSDK"
-let checksum = "415bf2cff1897e6ca5d69e832fd9c33782f947d9d937cc9a9554e82a034ea457"
+let checksum = "977b36d2e1a546a233207e5d2f7c172288237a2d8202c05ba9df12eb6236a1db"
 
 let package = Package(
     name: moduleName,
@@ -14,12 +14,12 @@ let package = Package(
     products: [
         .library(
             name: moduleName,
-            targets: [moduleName]
+            targets: [moduleName, "KidozRemoteTarget"]
         )
     ],
     targets: [
         .binaryTarget(
-            name: moduleName,
+            name: "KidozRemoteTarget",
             url: "https://github.com/kidoz-il/KidozSdkDistribution/releases/download/\(version)/\(moduleName).xcframework.zip",
             checksum: checksum
         )

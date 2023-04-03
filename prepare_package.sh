@@ -30,13 +30,15 @@ cat Package.swift
 
 # 5. Commit all data without the XCfrmework
 echo "git commit all without framework and push"
-git add --all -- :!$FRAMEWORK_NAME.xcframework.zip
+#git add --all -- :!$FRAMEWORK_NAME.xcframework.zip
+#git commit -m "New $FRAMEWORK_NAME version $NEW_VERSION"
+git add --all -- :!KidozSDK.xcframework.zip
 git commit -m "New $FRAMEWORK_NAME version $NEW_VERSION"
 git push
 
 # 6. Pusblish a new release with the same version of the repository A, and attach XCFramework in the Release metadata
 echo "Releasing the new version"
-gh release create "$NEW_VERSION" --generate-notes "./$FRAMEWORK_NAME.xcframework.zip"
+gh release create "$NEW_VERSION" --generate-notes "./KidozSDK.xcframework.zip"
 
 # 7. Remove zip of XCFramework
 echo "delete downloaded zip file"

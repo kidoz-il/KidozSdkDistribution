@@ -14,7 +14,7 @@ let package = Package(
     products: [
         .library(
             name: moduleName,
-            targets: [moduleName, "KidozRemoteTarget"]
+            targets: ["KidozRemoteTarget"]
         )
     ],
     targets: [

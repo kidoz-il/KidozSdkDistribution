@@ -2,9 +2,9 @@
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 import PackageDescription
 
-let version = "1.1.0"
+let version = "1.1.2"
 let moduleName = "KidozSDK"
-let checksum = "977b36d2e1a546a233207e5d2f7c172288237a2d8202c05ba9df12eb6236a1db"
+let checksum = "95816705d1bb51fdfa1726c348a6408e4dea8d70e5834727c8099628508ffed7"
 
 let package = Package(
     name: moduleName,
